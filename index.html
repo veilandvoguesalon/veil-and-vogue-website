@@ -554,6 +554,28 @@
 
     }
 
+    .location-photos {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 16px;
+    align-items: end;
+}
+
+.location-photos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.location-photos img:first-child {
+    aspect-ratio: 4 / 5;
+}
+
+.location-photos img:last-child {
+    aspect-ratio: 1 / 1;
+}
+
     .location-details {
 
       border-top: 1px solid var(--line);
@@ -1290,7 +1312,7 @@
 
       </div>
 
-      <div>
+      <div class="location-photos">
 
         <img src="IMG_7322.jpeg" alt="Veil & Vogue salon interior">
 <img src="IMG_7317.jpeg" alt="Veil & Vogue salon interior decor">
