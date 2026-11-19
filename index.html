@@ -876,7 +876,27 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HairSalon","name":"Veil & Vogue","url":"https://veilandvoguesalon.com/","telephone":"+1-203-709-0659","image":"https://veilandvoguesalon.com/IMG_7946.jpeg","priceRange":"$35-$350+","address":{"@type":"PostalAddress","streetAddress":"143 Southwind Rd","addressLocality":"Waterbury","addressRegion":"CT","postalCode":"06708","addressCountry":"US"},"areaServed":"Waterbury, Connecticut"}
 </script>
-  
+<script>
+
+  document.addEventListener('click', function (event) {
+
+    if (!(event.target instanceof Element)) return;
+
+    if (!event.target.closest('a[href^="tel:"]')) return;
+
+    if (typeof window.gtag === 'function') {
+
+      window.gtag('event', 'conversion', {
+
+        send_to: 'AW-18414246077/ffuACKv8jrsdEL2xzMxE'
+
+      });
+
+    }
+
+  });
+
+</script>  
 </head>
 
 <body>
